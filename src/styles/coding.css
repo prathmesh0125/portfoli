@@ -1,0 +1,174 @@
+* {
+    margin: 0%;
+    padding: 0%;
+  }
+  .ProfileContainer {
+    width: 100%;
+    min-height: 600px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .Profilecard {
+    width: 250px;
+    height: 300px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 7px 4px rgba(96, 89, 101, 0.863);
+    margin: 15px;
+    transition: all 0.3s linear 0.1s;
+    box-sizing: border-box;
+    transform: translateX(-100vw);
+    animation: Profilecard 1s ease-in-out forwards 0.5s;
+  }
+  .Profilecard:nth-child(even){
+    transform: translateX(100vw);
+    animation: Profilecard 1s ease-in-out forwards 1s;
+  
+  }
+  
+  @keyframes Profilecard {
+    to{
+        transform: translateX(0) ;
+  
+    }
+    
+  }
+  .Profilecard:hover {
+    transform: rotate(360deg);
+ 
+  }
+  
+  .Profilecard img {
+    width: 249px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 150px;
+  }
+  .Profilecard h2 {
+    margin: 10%;
+    font-size: 1.875rem;
+    font-weight: bold;
+  
+  }
+  .Profilecard p {
+    margin: 0px 27px;
+    text-align: center;
+    line-height: 25px;
+  }
+  .plate {
+    width: 80%;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: aquamarine; */
+  }
+  .plate img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .button {
+    width: 100%;
+    
+    line-height: 20px;
+    
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px 2px rgb(71, 56, 56);
+  }
+  
+  .profileInfo {
+    margin-top: 50%;
+    line-height: 56px;
+  }
+  .profileInfo a {
+    color: black;
+   display: flex;
+   justify-content: center;
+   text-decoration: none;
+  }
+  @media (min-width: 420px) and (max-width: 1150px) {
+    .ProfileContainer {
+      width: 100%;
+      margin-top: 14%;
+      min-height: 760px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+      overflow: hidden;
+    }
+  }
+  h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -10%;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  @media (min-width: 1151px){
+    .ProfileContainer {
+    margin-top: 4%;
+
+    }
+  }
+  @media  (max-width: 420px) {
+    .Profilecard {
+      width: 180px;
+      height: 220px;
+    }
+    .Profilecard img {
+      width: 178px;
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      height: 120px;
+  }
+  .ProfileContainer {
+   gap: 1rem;
+  }
+  h2{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: -10%;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .Profilecard{
+    margin: 0%;
+  }
+  .profileInfo {
+    margin-top: 38%;
+    line-height: 31px;
+}
+.Profilecard p {
+  margin: 0px auto;
+  text-align: center;
+  padding: 1px 14px;
+  /* line-height: 25px; */
+}
+.profileInfo a {
+ font-size: 13px;
+}
+.button {
+  width: 100%;
+  line-height: 8px;
+  font-size: 11px;
+  
+}
+  }
